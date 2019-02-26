@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,71 +16,88 @@
     <link rel="stylesheet" href="https://missionq.asia/assets/css/Newsletter-Subscription-Form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
     <style>
-    html
-    {
-        background-color:#333;
-    }
-    body
-    {
-        font-family: 'Roboto', sans-serif;
-    }
-    .footer-dark .item.social > a
-    {
-        box-shadow: 0 0 0 0 transparent;
-    }
-    .carousel-cell
-    {
-        margin: 10px auto;
-        padding: 5px;
-    }
-    .room-carousel img
-    {
-        max-width: 300px;
-    }
-    .carousel-cell > .btn
-    {
-        margin: 10px auto;
-    }
-    .carousel-cell > p
-    {
-        text-align: justify;
-        /* max-width: 280px; */
-    }
-    section.features {
-        background-color: #333;
-        padding: 40px 0;
-        color: #fff;
-        font-size: 1.6rem;
-    }
-    </style>
+        html
+        {
+            background-color:#333;
+        }
+        body
+        {
+            font-family: 'Roboto', sans-serif;
+        }
+        .footer-dark .item.social > a
+        {
+            box-shadow: 0 0 0 0 transparent;
+        }
+        .carousel-cell
+        {
+            margin: 10px auto;
+            padding: 5px;
+        }
+        .room-carousel img
+        {
+            max-width: 300px;
+        }
+        .carousel-cell > .btn
+        {
+            margin: 10px auto;
+        }
+        .carousel-cell > p
+        {
+            text-align: justify;
+            /* max-width: 280px; */
+        }
+        section.features {
+            background-color: #333;
+            padding: 40px 0;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+        .fancybox-slide--iframe .fancybox-content {
+            width  : 100%;
+            height : 100%;
+            max-width  : 100%;
+            max-height : 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .fancybox-slide {
+            padding: 0;
+        }
+        </style>
 </head>
+
 <body>
     <!-- <nav class="navbar navbar-default navbar-fixed-top" style="background-color:rgba(0,0,0,0.3);font-size:18px;font-family:Roboto, sans-serif;">
-        <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand" href="#">Mission-Q</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="#">About Us</a></li>
-                    <li role="presentation"><a href="#">Escape Rooms</a></li>
-                    <li role="presentation"><a href="#">Contact Us</a></li>
-                </ul>
-        </div>
-        </div>
-    </nav> -->
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="#">Mission-Q</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="#">About Us</a></li>
+                        <li role="presentation"><a href="#">Escape Rooms</a></li>
+                        <li role="presentation"><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav> -->
     <div class="jumbotron hero" style="background-color:#000000;background-image:url(&quot;https://static1.squarespace.com/static/56a55c1589a60a5d20e9ff94/t/56d6356986db43480a9d8bfe/1456878955407/maze-hr.jpg?format=2500w&quot;);">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-push-6 phone-preview" style="margin-top:40px;">
                     <div class="iphone-mockup">
                         <div class="screen"></div>
-                    </div><iframe width="320" height="160" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/uiJVpMe9rdI?controls=0&amp;showinfo=0&amp;rel=0" style="height:180px;"></iframe></div>
+                    </div>
+                    <!-- <iframe width="320" height="160" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/uiJVpMe9rdI?controls=0&amp;showinfo=0&amp;rel=0"
+                        style="height:180px;"></iframe> -->
+                </div>
                 <div class="col-md-6 col-md-pull-4 get-it">
                     <h1>Real Physical Escape Game</h1>
                     <p>The TRUTH is only one step away.</p>
                     <p>
-                        <a id="btnBookNow" data-fancybox data-type="iframe" class="btn btn-danger btn-lg" role="button" href="https://app.kamfu.app/missionq/index.php">Book Now </a>
-                        <a id="btnGroupBooking" data-fancybox data-type="iframe"  class="btn btn-danger btn-lg" role="button" href="https://app.kamfu.app/missionq/groupbooking.php">Corporate Team Building</a>
+                        <a id="btnBookNow" data-fancybox data-type="iframe" class="btn btn-danger btn-lg" role="button"
+                            href="https://app.kamfu.app/missionq/index.php">Book Now </a>
+                        <a id="btnGroupBooking" data-fancybox data-type="iframe" class="btn btn-danger btn-lg" role="button"
+                            href="https://app.kamfu.app/missionq/groupbooking.php">Corporate Team Building</a>
                     </p>
                 </div>
             </div>
@@ -88,7 +106,8 @@
     <section class="testimonials">
         <h2 class="text-center">People Love It!</h2>
         <blockquote>
-            <p>Great support for the Game Master and truly appreciate for the coordination for our company mini team building . Food arrangement &amp; quality are excellent. Keep it up!! </p>
+            <p>Great support for the Game Master and truly appreciate for the coordination for our company mini team
+                building . Food arrangement &amp; quality are excellent. Keep it up!! </p>
             <footer>Mindy MinMin </footer>
         </blockquote>
     </section>
@@ -98,18 +117,36 @@
                 <div class="col-md-6">
                     <!-- <h2>About Us</h2> -->
                     <h3>What is Mission-Q?</h3>
-                    <p class="text-left">Mission-Q (Real Escape Game Room in Malaysia) brings you 5 unique adventurous escape rooms, each with its own theme. The objective is to physically escape from the room within an hour by collecting items, identifying clues, and solving puzzles and riddles. This game requires observation, teamwork, creativity, communication, and courage. </p>
-                    <h5>"Help" bell</h5>
-                    <p class="text-left">Inside each room, you can easily spot the "Help" bell and you may use this to call our dedicated Game Master for help. For each "Help", we will give you clues and guide you to complete one puzzle. You may only use the "Help" bell once per one-hour game... We don't want to give away the surprise after all...</p>
-                    <h5>Safety</h5>
-                    <p class="text-left">Due to safety reasons, the entrance will remain unlocked. During the game, we rely on your sportsmanship to not to escape via the entrance. Doors with green "Exit" signs are emergency exits only.  They are not part of the game. </p>
+                    <p class="text-left">Mission-Q (Real Escape Game Room in Malaysia) brings you 5 unique adventurous
+                        escape rooms, each with its own theme. The objective is to physically escape from the room
+                        within an hour by collecting items, identifying clues, and solving puzzles and riddles. This
+                        game requires observation, teamwork, creativity, communication, and courage. </p>
+                    <h4 style="font-weight:bold; text-decoration:underline;">"Help" bell</h4>
+                    <p class="text-left">Inside each room, you can easily spot the "Help" bell and you may use this to
+                        call our dedicated Game Master for help. For each "Help", we will give you clues and guide you
+                        to complete one puzzle. You may only use the "Help" bell once per one-hour game... We don't
+                        want to give away the surprise after all...</p>
+                    <h4 style="font-weight:bold; text-decoration:underline;">Safety</h4>
+                    <p class="text-left">Due to safety reasons, the entrance will remain unlocked. During the game, we
+                        rely on your sportsmanship to not to escape via the entrance. Doors with green "Exit" signs are
+                        emergency exits only. They are not part of the game. </p>
                 </div>
                 <div class="col-md-6">
                     <h3>Before you start</h3>
                     <ul>
-                        <li class="text-left">Your personal belongings such as mobile phones, keys, bags, papers, books, pens, pencils, laptops, recorders, cameras, food and beverages, etc. shall be kept at our designated lockers before entering the game room. Our dedicated Game Master will give you a brief introduction before the game begins. Please arrive 15 minutes before your session for these instructions. For late comers, we may only accommodate your playing time until the designated session ends.</li>
-                        <li class="text-left">Keep in mind that the safety factors have been taken into consideration when designing the escape routes. This is an intellectual game - so if your idea for solving a particular puzzle or unlocking a door involves any stunts, brute force, or any actions that may put you or your teammates in danger (such as roof climbing, breaking doors...), you are definitely on the wrong track!</li>
-                        <li class="text-left">Some clues are meant for later stages of the game. Move on if you are not sure how to use a clue, come back to it when you have gathered more clues.</li>
+                        <li class="text-left">Your personal belongings such as mobile phones, keys, bags, papers,
+                            books, pens, pencils, laptops, recorders, cameras, food and beverages, etc. shall be kept
+                            at our designated lockers before entering the game room. Our dedicated Game Master will
+                            give you a brief introduction before the game begins. Please arrive 15 minutes before your
+                            session for these instructions. For late comers, we may only accommodate your playing time
+                            until the designated session ends.</li>
+                        <li class="text-left">Keep in mind that the safety factors have been taken into consideration
+                            when designing the escape routes. This is an intellectual game - so if your idea for
+                            solving a particular puzzle or unlocking a door involves any stunts, brute force, or any
+                            actions that may put you or your teammates in danger (such as roof climbing, breaking
+                            doors...), you are definitely on the wrong track!</li>
+                        <li class="text-left">Some clues are meant for later stages of the game. Move on if you are not
+                            sure how to use a clue, come back to it when you have gathered more clues.</li>
                     </ul>
                 </div>
             </div>
@@ -131,83 +168,104 @@
                 </div>
                 <div class="col-md-6">
                     <!-- <div class="row icon-features">
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
-                            <p>Cloud-ready </p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
-                            <p>Saves You Money</p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-fire"></i>
-                            <p>Fire Proof</p>
-                        </div>
-                    </div> -->
+                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
+                                <p>Cloud-ready </p>
+                            </div>
+                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
+                                <p>Saves You Money</p>
+                            </div>
+                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-fire"></i>
+                                <p>Fire Proof</p>
+                            </div>
+                        </div> -->
                 </div>
             </div>
         </div>
     </section>
     <!-- <div class="simple-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+                    <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+                    <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div> -->
+        </div> -->
     <div class="room-carousel" style="max-width:300px;margin:80px auto;">
-            <div class="carousel-cell">
-                <img src="https://missionq.asia/assets/sunway/poster_rm1.png?1" class="carousel-cell-image">
-                <h1>Room 1: The Harvest</h1>
-                <p>Difficulty: 4 stars</p>
-                <p>Physical: 5 stars</p> 
-                <p>Number of players: 2 - 8</p>
-                <p>Remarks: Freedom is an unknown privillege</p>
-                <p>Description: As a police detective, you've heard of the cold case of the missing organs that seems to keep recurring with every murder - the victims always end up with their throats slit, eyes bruised, and always with their heart missing. There's only one item that links these murders together, the victim always gets a sketch of a human heart. You think it may be witchcraft, but when your nephew, Charlie whom you've just reunited with after 10 years, suddenly goes missing again - and you discover the same sketch of a human heart in his bag, you know that you have to pick up the case even though you weren't assign to it. Together with your friends, you are going to race against time and proper procedures to solve this case, and save your nephew.</p>
-                <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
-            </div>
-            <div class="carousel-cell">
-                <img src="https://missionq.asia/assets/sunway/poster_rm2.png?1" class="carousel-cell-image">
-                <h1>Room 2: Knock Knock Who's There</h1>
-                <p>Difficulty: 3 stars</p>
-                <p>Physical: 3 stars</p> 
-                <p>Number of players: 2 - 8</p>
-                <p>Remarks: Guess who's here?</p>
-                <p>Description: With a group of friends, you stumbled upon an isolated cabin that located right in the middle of a thick, green forest. You enter to see a cozy interior. It looks well-lived in but something just doesn't feel right- there's a chill down your spine as you suddenly hear muted knocking sound of hard wood. Sounds as if someone is at the door but there isn't anyone. A stench that smells like corpses reached your nostrils and your gaze forced onto a photo frame by the table. The knocking sounds get louder now. Maybe it isn't the door. Maybe it's the wooden cane belonging to the resident but here you wonder- where is everyone?</p>
-                <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
-            </div>
-            <div class="carousel-cell">
-                <img src="https://missionq.asia/assets/sunway/poster_rm3.png?1" class="carousel-cell-image">
-                <h1>Room 3: Saving King Arthur</h1>
-                <p>Difficulty: 3 stars</p>
-                <p>Physical: 3 stars</p> 
-                <p>Number of players: 2 - 8</p>
-                <p>Remarks: In the land of knights and magic, honor is your desire</p>
-                <p>Description: As a knight, no honor is greater than to be in possession of the Great Excalibur. The Queen has promised you these FOUR coveted swords will to you- if you save her only son, the prince and soon-to-be King Arthur. He has been held hostage in his own castle and the rest of the knights have been killed in their attempt to save him. In your desire for honor and pride, you take up this mission to save the future King of Camelot and to gain the Excalibur.</p>
-                <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
-            </div>
-            <div class="carousel-cell">
-                <img src="https://missionq.asia/assets/sunway/poster_rm4.png?1" class="carousel-cell-image">
-                <h1>Room 4: Tomb Of Life & Death</h1>
-                <p>Difficulty: 5 stars</p>
-                <p>Physical: 3 stars</p> 
-                <p>Number of players: 2 - 10</p>
-                <p>Remarks: Are you the next Indiana Jones?</p>
-                <p>Description: Racing through the sands of time in hopes of escaping the clutches of Anubis, the jackal-God of mummification. An excursion for gold and treasure that overwhelms the desires of mankind turns away when you find yourself trapped in tomb of life and death.</p>
-                <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
-            </div>
-            <div class="carousel-cell">
-                <img src="https://missionq.asia/assets/sunway/poster_rm5.png?1" class="carousel-cell-image">
-                <h1>Room 5: The Imperial Mausoleum</h1>
-                <p>Difficulty: 4 stars</p>
-                <p>Physical: 5 stars</p> 
-                <p>Number of players: 2 - 8</p>
-                <p>Remarks: The grandeur of the dead</p>
-                <p>Description: A tomb hidden deep in the heart of China is rumored to be haunted by their first emperor, Qin Shi Huang who was buried there alongside his wealth, army, and slaves. His spirit roams through the halls to protect all that he has left and will banish anyone who trespasses into eternal damnation.</p>
-                <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
-            </div>
+        <div class="carousel-cell">
+            <img src="https://missionq.asia/assets/sunway/poster_rm1.png?1" class="carousel-cell-image">
+            <h1>Room 1: The Harvest</h1>
+            <p>Difficulty: 4 stars</p>
+            <p>Physical: 5 stars</p>
+            <p>Number of players: 2 - 8</p>
+            <p>Remarks: Freedom is an unknown privillege</p>
+            <p>Description: As a police detective, you've heard of the cold case of the missing organs that seems to
+                keep recurring with every murder - the victims always end up with their throats slit, eyes bruised, and
+                always with their heart missing. There's only one item that links these murders together, the victim
+                always gets a sketch of a human heart. You think it may be witchcraft, but when your nephew, Charlie
+                whom you've just reunited with after 10 years, suddenly goes missing again - and you discover the same
+                sketch of a human heart in his bag, you know that you have to pick up the case even though you weren't
+                assign to it. Together with your friends, you are going to race against time and proper procedures to
+                solve this case, and save your nephew.</p>
+            <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
+        </div>
+        <div class="carousel-cell">
+            <img src="https://missionq.asia/assets/sunway/poster_rm2.png?1" class="carousel-cell-image">
+            <h1>Room 2: Knock Knock Who's There</h1>
+            <p>Difficulty: 3 stars</p>
+            <p>Physical: 3 stars</p>
+            <p>Number of players: 2 - 8</p>
+            <p>Remarks: Guess who's here?</p>
+            <p>Description: With a group of friends, you stumbled upon an isolated cabin that located right in the
+                middle of a thick, green forest. You enter to see a cozy interior. It looks well-lived in but something
+                just doesn't feel right- there's a chill down your spine as you suddenly hear muted knocking sound of
+                hard wood. Sounds as if someone is at the door but there isn't anyone. A stench that smells like
+                corpses reached your nostrils and your gaze forced onto a photo frame by the table. The knocking sounds
+                get louder now. Maybe it isn't the door. Maybe it's the wooden cane belonging to the resident but here
+                you wonder- where is everyone?</p>
+            <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
+        </div>
+        <div class="carousel-cell">
+            <img src="https://missionq.asia/assets/sunway/poster_rm3.png?1" class="carousel-cell-image">
+            <h1>Room 3: Saving King Arthur</h1>
+            <p>Difficulty: 3 stars</p>
+            <p>Physical: 3 stars</p>
+            <p>Number of players: 2 - 8</p>
+            <p>Remarks: In the land of knights and magic, honor is your desire</p>
+            <p>Description: As a knight, no honor is greater than to be in possession of the Great Excalibur. The Queen
+                has promised you these FOUR coveted swords will to you- if you save her only son, the prince and
+                soon-to-be King Arthur. He has been held hostage in his own castle and the rest of the knights have
+                been killed in their attempt to save him. In your desire for honor and pride, you take up this mission
+                to save the future King of Camelot and to gain the Excalibur.</p>
+            <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
+        </div>
+        <div class="carousel-cell">
+            <img src="https://missionq.asia/assets/sunway/poster_rm4.png?1" class="carousel-cell-image">
+            <h1>Room 4: Tomb Of Life & Death</h1>
+            <p>Difficulty: 5 stars</p>
+            <p>Physical: 3 stars</p>
+            <p>Number of players: 2 - 10</p>
+            <p>Remarks: Are you the next Indiana Jones?</p>
+            <p>Description: Racing through the sands of time in hopes of escaping the clutches of Anubis, the
+                jackal-God of mummification. An excursion for gold and treasure that overwhelms the desires of mankind
+                turns away when you find yourself trapped in tomb of life and death.</p>
+            <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
+        </div>
+        <div class="carousel-cell">
+            <img src="https://missionq.asia/assets/sunway/poster_rm5.png?1" class="carousel-cell-image">
+            <h1>Room 5: The Imperial Mausoleum</h1>
+            <p>Difficulty: 4 stars</p>
+            <p>Physical: 5 stars</p>
+            <p>Number of players: 2 - 8</p>
+            <p>Remarks: The grandeur of the dead</p>
+            <p>Description: A tomb hidden deep in the heart of China is rumored to be haunted by their first emperor,
+                Qin Shi Huang who was buried there alongside his wealth, army, and slaves. His spirit roams through the
+                halls to protect all that he has left and will banish anyone who trespasses into eternal damnation.</p>
+            <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
+        </div>
     </div>
     <section class="features" style="background-color:#282d32;">
         <div class="container">
@@ -218,16 +276,16 @@
                 </div>
                 <div class="col-md-6">
                     <!-- <div class="row icon-features">
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
-                            <p>Cloud-ready </p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
-                            <p>Saves You Money</p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-fire"></i>
-                            <p>Fire Proof</p>
-                        </div>
-                    </div> -->
+                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
+                                <p>Cloud-ready </p>
+                            </div>
+                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
+                                <p>Saves You Money</p>
+                            </div>
+                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-fire"></i>
+                                <p>Fire Proof</p>
+                            </div>
+                        </div> -->
                 </div>
             </div>
         </div>
@@ -239,7 +297,10 @@
             <p>Difficulty: 4 stars</p>
             <p>Number of players: 2 - 6</p>
             <p>Remarks: Can history be rewritten?</p>
-            <p>Description: 30 years have passed an incident not avoided, A death, a loss of a loved one, history all recorded, but now the secrets of space and time are in your hands, with hopes of changing history; to be granted one last demand, given the chance, will fate and luck hear your plead. Will you be trapped in the warps of time, or will you succeed?</p>
+            <p>Description: 30 years have passed an incident not avoided, A death, a loss of a loved one, history all
+                recorded, but now the secrets of space and time are in your hands, with hopes of changing history; to
+                be granted one last demand, given the chance, will fate and luck hear your plead. Will you be trapped
+                in the warps of time, or will you succeed?</p>
             <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
         </div>
         <div class="carousel-cell">
@@ -248,7 +309,10 @@
             <p>Difficulty: 3 stars</p>
             <p>Number of players: 2 - 6</p>
             <p>Remarks: The brightest flame casts the darkest shadow.</p>
-            <p>Description: In a sudden move, the Great Illusionist has announced that he is retiring after 30 years of performing. No one knows why but word is that the Great Illusionist is afraid. Of what? There is no sign. The Great Illusionist seeks an apprentice, one who will carry on his legacy. Only the hardiest may try, but only the worthy may gain the secrets of the Great Illusionist.</p>
+            <p>Description: In a sudden move, the Great Illusionist has announced that he is retiring after 30 years of
+                performing. No one knows why but word is that the Great Illusionist is afraid. Of what? There is no
+                sign. The Great Illusionist seeks an apprentice, one who will carry on his legacy. Only the hardiest
+                may try, but only the worthy may gain the secrets of the Great Illusionist.</p>
             <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
         </div>
         <div class="carousel-cell">
@@ -257,7 +321,12 @@
             <p>Difficulty: 3 stars</p>
             <p>Number of players: 2 - 6</p>
             <p>Remarks: Everything is an Illusion</p>
-            <p>Description: Almost a decade has passed since the infamous St. Andrews Psychiatric Clinic was abandoned, sitting empty and desolate at the end of a quiet road. Throughout the years, many have reported sightings of supernatural activity in the clinic; a lone figure dressed in white flitting through the halls, red eyes always watching from dark corners, and whispers echoing through the building in the dead of the night. As famed paranormal investigators, dare you investigate the truth behind these sightings?</p>
+            <p>Description: Almost a decade has passed since the infamous St. Andrews Psychiatric Clinic was abandoned,
+                sitting empty and desolate at the end of a quiet road. Throughout the years, many have reported
+                sightings of supernatural activity in the clinic; a lone figure dressed in white flitting through the
+                halls, red eyes always watching from dark corners, and whispers echoing through the building in the
+                dead of the night. As famed paranormal investigators, dare you investigate the truth behind these
+                sightings?</p>
             <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
         </div>
         <div class="carousel-cell">
@@ -266,7 +335,10 @@
             <p>Difficulty: 3 stars</p>
             <p>Number of players: 2 - 6</p>
             <p>Remarks: The mystery of black and white.</p>
-            <p>Description: The Penguins of Madagascar are being held captive after their futile attempt in escaping the zoo and their anonymous kidnapper is on the loose. Their foot tracks lead you to an abandoned place where the mischief in black and white slowly unfolds. But with an approaching snowstorm that devours anything in its way, is there sufficient time to rescue them?</p>
+            <p>Description: The Penguins of Madagascar are being held captive after their futile attempt in escaping
+                the zoo and their anonymous kidnapper is on the loose. Their foot tracks lead you to an abandoned place
+                where the mischief in black and white slowly unfolds. But with an approaching snowstorm that devours
+                anything in its way, is there sufficient time to rescue them?</p>
             <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
         </div>
         <div class="carousel-cell">
@@ -275,77 +347,91 @@
             <p>Difficulty: 3 stars</p>
             <p>Number of players: 2 - 6</p>
             <p>Remarks: Only the worthy shall pass</p>
-            <p>Description: Prophecies, a haunting burden to chosen ones. When a secret scroll was proffered to Soyfa by the illusionist, she must do whatever it takes to disclose the puzzling secrets of the scroll because she, is the chosen one. Will you shoulder this burden with Sofya and help her to fulfill the prophesies events that have yet to come? Make your choice before time runs out.</p>
+            <p>Description: Prophecies, a haunting burden to chosen ones. When a secret scroll was proffered to Soyfa
+                by the illusionist, she must do whatever it takes to disclose the puzzling secrets of the scroll
+                because she, is the chosen one. Will you shoulder this burden with Sofya and help her to fulfill the
+                prophesies events that have yet to come? Make your choice before time runs out.</p>
             <button class="btn btn-danger btn-lg btn-block btnBookNow">Book Now</button>
         </div>
     </div>
     <!-- <div class="simple-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
-                <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+                    <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+                    <div class="swiper-slide" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=68&amp;txt=Slideshow+Image&amp;w=1920&amp;h=500);"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div> -->
+        </div> -->
     <!-- <div class="newsletter-subscribe">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Subscribe for our Newsletter</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Subscribe for our Newsletter</h2>
+                    <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                </div>
+                <form class="form-inline" method="post">
+                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
+                    <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
+                </form>
             </div>
-            <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-                <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
-            </form>
-        </div>
-    </div> -->
+        </div> -->
     <!-- <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?q=Paris%2C+France&amp;zoom=11"></iframe></div>
-                <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?q=Paris%2C+France&amp;zoom=11"></iframe></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?q=Paris%2C+France&amp;zoom=11"></iframe></div>
+                    <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?q=Paris%2C+France&amp;zoom=11"></iframe></div>
+                </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
     <div class="footer-dark">
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 item text">
-<h3 style="color:#ffffff;">Sunway Branch</h3>
-<p>
-Hour: 10:00 am - 10:00 pm<br>
-Phone: +603-5612 9528<br>
-Email: <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a><br>
-<br>
-Address: 
-Unit No F1.19A, First Floor, Sunway Pyramid Shopping Mall
-No.3, Jalan PJS 11/15, Bandar Sunway,
-47500 Petaling Jaya, Selangor.
-(Next to Bowling Centre)
-<br><br>
-* For Team Building, Inquiries, Business Opportunities & Franchising enquiries please contact Leon at <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a> or 016-322-7446
-</p>
+                        <h3 style="color:#ffffff;">Sunway Branch</h3>
+                        <p>
+                            Hour: 10:00 am - 10:00 pm<br>
+                            Phone: +603-5612 9528<br>
+                            Email: <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click
+                                to Email</a><br>
+                            <br>
+                            Address:
+                            Unit No F1.19A, First Floor, Sunway Pyramid Shopping Mall
+                            No.3, Jalan PJS 11/15, Bandar Sunway,
+                            47500 Petaling Jaya, Selangor.
+                            (Next to Bowling Centre)
+                            <br><br>
+                            * For Team Building, Inquiries, Business Opportunities & Franchising enquiries please
+                            contact Leon at <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click
+                                to Email</a> or 016-322-7446
+                        </p>
                     </div>
                     <div class="col-md-6 item text">
-<h3 style="color:#ffffff;">Penang Branch</h3>
-<p>
-Hour: 10:30 am - 11:00 pm<br>
-Phone: +604-6370 607<br>
-Email: <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a><br>
-<br>
-Address: 3F-21 &amp; 22, Queensbay Mall, 100 Persiaran Bayan Indah, 11900 Bayan Lepas, Penang.<br>
-<br><br>
-* For Team Building, Inquiries, Business Opportunities & Franchising enquiries please contact Jeffrey at <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a> or 012-640-9528
-</p>
+                        <h3 style="color:#ffffff;">Penang Branch</h3>
+                        <p>
+                            Hour: 10:30 am - 11:00 pm<br>
+                            Phone: +604-6370 607<br>
+                            Email: <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click
+                                to Email</a><br>
+                            <br>
+                            Address: 3F-21 &amp; 22, Queensbay Mall, 100 Persiaran Bayan Indah, 11900 Bayan Lepas,
+                            Penang.<br>
+                            <br><br>
+                            * For Team Building, Inquiries, Business Opportunities & Franchising enquiries please
+                            contact Jeffrey at <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click
+                                to Email</a> or 012-640-9528
+                        </p>
                     </div>
                     <div class="col-md-12 col-sm-4 item social">
-                        <a href="https://www.facebook.com/MissionQ/"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="https://twitter.com/mission_q"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.facebook.com/MissionQ/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="https://twitter.com/mission_q">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
                     </div>
                 </div>
                 <p class="copyright">Mission-Q © Since 2013</p>
@@ -361,20 +447,42 @@ Address: 3F-21 &amp; 22, Queensbay Mall, 100 Persiaran Bayan Indah, 11900 Bayan 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
-    $(document).ready(function () {
-        // login-carousel
-        var $carousel = $('.room-carousel').flickity({
-            prevNextButtons: false,
-            autoPlay: false,
-            contain: true
+        $(document).ready(function () {
+            // login-carousel
+            var $carousel = $('.room-carousel').flickity({
+                prevNextButtons: false,
+                autoPlay: false,
+                contain: true
+            });
+            $('[data-fancybox]').fancybox({
+                modal: true,
+                iframe : {
+                    preload : false,
+                    tpl: '<iframe id="fancybox-frame" name="fancybox-frame{rnd}" class="fancybox-iframe" allowfullscreen allow="autoplay; fullscreen" src=""></iframe>',
+                    css : {
+                        width : '100%',
+                        height : '100%'
+                    }
+                }
+            });
+            $('.btnBookNow').on('click', function () {
+                $('#btnBookNow').click();
+            });
+            $('.btnGroupBooking').on('click', function () {
+                $('#btnGroupBooking').click();
+            });
         });
-        $('.btnBookNow').on('click', function(){
-            $('#btnBookNow').click();
-        });
-        $('.btnGroupBooking').on('click', function(){
-            $('#btnGroupBooking').click();
-        });
-    });
+        //respond to events
+        window.addEventListener('message',function(event) {
+            if(event.origin !== 'https://app.kamfu.app') return;
+            console.log('message received:  ' + event.data,event);
+            if( event.data == 'closefancybox' )
+            {
+                $.fancybox.close();
+            }
+            // event.source.postMessage('holla back youngin!',event.origin);
+        },false);
     </script>
 </body>
+
 </html>
