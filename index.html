@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html style="font-family:Roboto, sans-serif;background-color:#444444;">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mission-Q Escape Room</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.8/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="https://missionq.asia/assets/css/Newsletter-Subscription-Form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
     <style>
+    html
+    {
+        background-color:#333;
+    }
+    body
+    {
+        font-family: 'Roboto', sans-serif;
+    }
     .footer-dark .item.social > a
     {
         box-shadow: 0 0 0 0 transparent;
@@ -36,6 +44,12 @@
     {
         text-align: justify;
         /* max-width: 280px; */
+    }
+    section.features {
+        background-color: #333;
+        padding: 40px 0;
+        color: #fff;
+        font-size: 1.6rem;
     }
     </style>
 </head>
@@ -65,7 +79,7 @@
                     <p>The TRUTH is only one step away.</p>
                     <p>
                         <a id="btnBookNow" data-fancybox data-type="iframe" class="btn btn-danger btn-lg" role="button" href="https://app.kamfu.app/missionq/index.php">Book Now </a>
-                        <a class="btn btn-danger btn-lg" role="button" href="mailto:booking@missionq.asia">Group Booking</a>
+                        <a id="btnGroupBooking" data-fancybox data-type="iframe"  class="btn btn-danger btn-lg" role="button" href="https://app.kamfu.app/missionq/groupbooking.php">Corporate Team Building</a>
                     </p>
                 </div>
             </div>
@@ -78,24 +92,24 @@
             <footer>Mindy MinMin </footer>
         </blockquote>
     </section>
-    <section class="features" style="background-color:#313437;">
+    <section class="features">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <!-- <h2>About Us</h2> -->
-                    <h5>What is Mission-Q?</h5>
-                    <p class="text-justify">Mission-Q (Real Escape Game Room in Malaysia)brings you 5 unique adventurous escape rooms, each with its own theme. The objective is to physically escape from the room within an hour by collecting items, identifying clues, and solving puzzles and riddles. This game requires observation, teamwork, creativity, communication, and courage. </p>
+                    <h3>What is Mission-Q?</h3>
+                    <p class="text-left">Mission-Q (Real Escape Game Room in Malaysia) brings you 5 unique adventurous escape rooms, each with its own theme. The objective is to physically escape from the room within an hour by collecting items, identifying clues, and solving puzzles and riddles. This game requires observation, teamwork, creativity, communication, and courage. </p>
                     <h5>"Help" bell</h5>
-                    <p class="text-justify">Inside each room, you can easily spot the "Help" bell and you may use this to call our dedicated Game Master for help. For each "Help", we will give you clues and guide you to complete one puzzle. You may only use the "Help" bell once per one-hour game... We don't want to give away the surprise after all...</p>
+                    <p class="text-left">Inside each room, you can easily spot the "Help" bell and you may use this to call our dedicated Game Master for help. For each "Help", we will give you clues and guide you to complete one puzzle. You may only use the "Help" bell once per one-hour game... We don't want to give away the surprise after all...</p>
                     <h5>Safety</h5>
-                    <p class="text-justify">Due to safety reasons, the entrance will remain unlocked. During the game, we rely on your sportsmanship to not to escape via the entrance. Doors with green "Exit" signs are emergency exits only.  They are not part of the game. </p>
+                    <p class="text-left">Due to safety reasons, the entrance will remain unlocked. During the game, we rely on your sportsmanship to not to escape via the entrance. Doors with green "Exit" signs are emergency exits only.  They are not part of the game. </p>
                 </div>
                 <div class="col-md-6">
-                    <h5>Before you start</h5>
+                    <h3>Before you start</h3>
                     <ul>
-                        <li class="text-justify">Your personal belongings such as mobile phones, keys, bags, papers, books, pens, pencils, laptops, recorders, cameras, food and beverages, etc. shall be kept at our designated lockers before entering the game room. Our dedicated Game Master will give you a brief introduction before the game begins. Please arrive 15 minutes before your session for these instructions. For late comers, we may only accommodate your playing time until the designated session ends.</li>
-                        <li class="text-justify">Keep in mind that the safety factors have been taken into consideration when designing the escape routes. This is an intellectual game - so if your idea for solving a particular puzzle or unlocking a door involves any stunts, brute force, or any actions that may put you or your teammates in danger (such as roof climbing, breaking doors...), you are definitely on the wrong track!</li>
-                        <li class="text-justify">Some clues are meant for later stages of the game. Move on if you are not sure how to use a clue, come back to it when you have gathered more clues.</li>
+                        <li class="text-left">Your personal belongings such as mobile phones, keys, bags, papers, books, pens, pencils, laptops, recorders, cameras, food and beverages, etc. shall be kept at our designated lockers before entering the game room. Our dedicated Game Master will give you a brief introduction before the game begins. Please arrive 15 minutes before your session for these instructions. For late comers, we may only accommodate your playing time until the designated session ends.</li>
+                        <li class="text-left">Keep in mind that the safety factors have been taken into consideration when designing the escape routes. This is an intellectual game - so if your idea for solving a particular puzzle or unlocking a door involves any stunts, brute force, or any actions that may put you or your teammates in danger (such as roof climbing, breaking doors...), you are definitely on the wrong track!</li>
+                        <li class="text-left">Some clues are meant for later stages of the game. Move on if you are not sure how to use a clue, come back to it when you have gathered more clues.</li>
                     </ul>
                 </div>
             </div>
@@ -306,18 +320,15 @@
 <p>
 Hour: 10:00 am - 10:00 pm<br>
 Phone: +603-5612 9528<br>
-Email: <a href="mailto:leon.chee@mission-q.com" target="_top">leon.chee@mission-q.com</a><br>
+Email: <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a><br>
 <br>
 Address: 
 Unit No F1.19A, First Floor, Sunway Pyramid Shopping Mall
 No.3, Jalan PJS 11/15, Bandar Sunway,
 47500 Petaling Jaya, Selangor.
 (Next to Bowling Centre)
-<br>
 <br><br>
-* For Team Building and Inquiries please contact Leon at <span class="white">leon.chee@mission-q.com</span> or 016-322-7446
-<br><br>
-* For Business Opportunities and Franchising enquiries please contact Leon at <span class="white">leon.chee@mission-q.com</span> or 016-322-7446
+* For Team Building, Inquiries, Business Opportunities & Franchising enquiries please contact Leon at <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a> or 016-322-7446
 </p>
                     </div>
                     <div class="col-md-6 item text">
@@ -325,13 +336,11 @@ No.3, Jalan PJS 11/15, Bandar Sunway,
 <p>
 Hour: 10:30 am - 11:00 pm<br>
 Phone: +604-6370 607<br>
-Email: <a href="mailto:queensbay@mission-q.com" target="_top">queensbay@mission-q.com</a><br>
+Email: <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a><br>
 <br>
 Address: 3F-21 &amp; 22, Queensbay Mall, 100 Persiaran Bayan Indah, 11900 Bayan Lepas, Penang.<br>
 <br><br>
-* For Team Building and Inquiries please contact Jeffrey at <span class="white">jeffrey.thong@mission-q.com</span> or 012-640-9528
-<br><br>
-* For Business Opportunities and Franchising enquiries please contact Jeffrey at <span class="white">jeffrey.thong@mission-q.com</span> or 012-640-9528
+* For Team Building, Inquiries, Business Opportunities & Franchising enquiries please contact Jeffrey at <a class="btnGroupBooking" href="javascript:void(0);" style="color:white;font-weight:bold;">Click to Email</a> or 012-640-9528
 </p>
                     </div>
                     <div class="col-md-12 col-sm-4 item social">
@@ -361,6 +370,9 @@ Address: 3F-21 &amp; 22, Queensbay Mall, 100 Persiaran Bayan Indah, 11900 Bayan 
         });
         $('.btnBookNow').on('click', function(){
             $('#btnBookNow').click();
+        });
+        $('.btnGroupBooking').on('click', function(){
+            $('#btnGroupBooking').click();
         });
     });
     </script>
