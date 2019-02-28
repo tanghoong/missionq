@@ -79,21 +79,7 @@
         }
         </style>
 </head>
-
 <body>
-    <!-- <nav class="navbar navbar-default navbar-fixed-top" style="background-color:rgba(0,0,0,0.3);font-size:18px;font-family:Roboto, sans-serif;">
-            <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="#">Mission-Q</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li role="presentation"><a href="#">About Us</a></li>
-                        <li role="presentation"><a href="#">Escape Rooms</a></li>
-                        <li role="presentation"><a href="#">Contact Us</a></li>
-                    </ul>
-            </div>
-            </div>
-        </nav> -->
     <style>
 .background-animation-container {
   position: fixed;
@@ -232,7 +218,12 @@
 	}
 
 }
-
+#btnCheckBooking
+{
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 5px;
+}
 </style>
                     <!-- <iframe width="320" height="160" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/uiJVpMe9rdI?controls=0&amp;showinfo=0&amp;rel=0"
                         style="height:180px;"></iframe> -->
@@ -243,9 +234,12 @@
                     <p>The TRUTH is only one step away.</p>
                     <p>
                         <a id="btnBookNow" data-fancybox data-type="iframe" class="btn btn-danger btn-lg" role="button"
-                            href="https://app.kamfu.app/missionq/index.php">Book Now </a>
+                            href="https://app.kamfu.app/missionq/index.php?mode=booking">Book Now </a>
                         <a id="btnGroupBooking" data-fancybox data-type="iframe" class="btn btn-danger btn-lg" role="button"
                             href="https://app.kamfu.app/missionq/groupbooking.php">Corporate Team Building</a>
+                        <br/>
+                        <a id="btnCheckBooking" data-fancybox data-type="iframe" class="btn" role="button"
+                        href="https://app.kamfu.app/missionq/index.php?mode=check">Check My Booking Status</a>
                     </p>
                 </div>
             </div>
@@ -253,8 +247,8 @@
         <a class="scroll-link" href="#testimonials">
             <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
                 <g fill="none" fill-rule="evenodd">
-                    <rect width="70" height="118" x="1.5" y="1.5" stroke="##f0f9ff" stroke-width="3" rx="36" />
-                    <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="##f0f9ff" />
+                    <rect width="70" height="118" x="1.5" y="1.5" stroke="#f0f9ff" stroke-width="3" rx="36" />
+                    <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#f0f9ff" />
                 </g>
             </svg>
         </a>
