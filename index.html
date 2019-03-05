@@ -122,6 +122,7 @@
 }
 
     </style>
+    <div id="loader" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     <div class="jumbotron hero fullheight">
         <!-- <div class="background-animation-container">
             <div class="background-gradient"></div>
@@ -224,6 +225,90 @@
     border: 1px solid #fff;
     margin-right: 5px;
 }
+
+.lds-spinner {
+    color: #000;
+    display: none;
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    z-index: 99999;
+    top: 10%;
+    left: 50%;
+    margin: -32px 0 0 -32px;
+}
+.lds-spinner div {
+  transform-origin: 32px 32px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 29px;
+  width: 5px;
+  height: 14px;
+  border-radius: 20%;
+  background: #000000;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 </style>
                     <!-- <iframe width="320" height="160" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/uiJVpMe9rdI?controls=0&amp;showinfo=0&amp;rel=0"
                         style="height:180px;"></iframe> -->
@@ -377,22 +462,9 @@
     <section class="features">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-12">
                     <h3>SUNWAY Escape Rooms</h3>
-                    <!-- <p>Morbi non mauris massa. Duis elit mauris, malesuada nec suscipit ac, bibendum sed augue. Maecenas condimentum magna gravida, laoreet nunc sed, euismod sem. </p> -->
-                </div>
-                <div class="col-md-6">
-                    <!-- <div class="row icon-features">
-                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
-                                <p>Cloud-ready </p>
-                            </div>
-                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
-                                <p>Saves You Money</p>
-                            </div>
-                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-fire"></i>
-                                <p>Fire Proof</p>
-                            </div>
-                        </div> -->
+                    <img style="margin:auto;" class="img-responsive img-rounded mx-auto d-block" src="https://www.mission-q.com/sunway/public/images/home/home_price3.jpg" />
                 </div>
             </div>
         </div>
@@ -485,22 +557,9 @@
     <section class="features">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-12">
                     <h3>PENANG Escape Rooms</h3>
-                    <!-- <p>Morbi non mauris massa. Duis elit mauris, malesuada nec suscipit ac, bibendum sed augue. Maecenas condimentum magna gravida, laoreet nunc sed, euismod sem. </p> -->
-                </div>
-                <div class="col-md-6">
-                    <!-- <div class="row icon-features">
-                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-cloud"></i>
-                                <p>Cloud-ready </p>
-                            </div>
-                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-piggy-bank"></i>
-                                <p>Saves You Money</p>
-                            </div>
-                            <div class="col-xs-4 icon-feature"><i class="glyphicon glyphicon-fire"></i>
-                                <p>Fire Proof</p>
-                            </div>
-                        </div> -->
+                    <img style="margin:auto;" class="img-responsive img-rounded mx-auto d-block" src="https://www.mission-q.com/penang/public/images/home/home_price3.jpg" />
                 </div>
             </div>
         </div>
@@ -680,7 +739,11 @@
                     }
                 },
                 beforeLoad: function () {
+                    $('#loader').css('display','inline-block');
                     $('body').css('overflow', 'hidden');
+                },
+                afterShow: function () {
+                    $('#loader').css('display','none');
                 },
                 afterClose: function () {
                     $('body').css('overflow', 'auto');
