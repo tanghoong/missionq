@@ -314,7 +314,7 @@
                         href="sunway.html">Sunway</a>
                         <br/>
                         <a id="btnCheckBooking" data-fancybox data-type="iframe" class="btn" role="button"
-                        href="https://app.kamfu.app/missionq/index.php?mode=checking">Check My Booking Status</a>
+                        href="https://booking.mission-q.com/index.php?mode=checking">Check My Booking Status</a>
                     </p>
                 </div>
             </div>
@@ -419,7 +419,7 @@
         });
         //respond to events
         window.addEventListener('message', function (event) {
-            if (event.origin !== 'https://app.kamfu.app') return;
+            if (event.origin !== 'https://booking.mission-q.com') return;
             console.log('message received:  ' + event.data, event);
             if (event.data == 'closefancybox') {
                 $.fancybox.close();
